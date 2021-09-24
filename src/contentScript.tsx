@@ -22,7 +22,7 @@ import { log } from './utils/logger';
 
             // Html etiqueta <a></a> de tipo linkText (href)
             const a1 = document.createElement('a');
-            const linkText = document.createTextNode('FIFA 21 - Noticias FUT Ingresa aqui!');
+            const linkText = document.createTextNode('FIFA 22 - Noticias FUT Ingresa aqui!');
             a1.appendChild(linkText);
             a1.href = 'https://www.todoultimateteam.com/'; // Propertys CSS
             a1.target = '_blank';

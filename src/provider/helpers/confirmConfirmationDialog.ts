@@ -32,6 +32,7 @@ function findDialogButtonbyTextContent(doc: Element, text: string) {
   var buttons = doc.querySelectorAll('button');
   for (var i=0, l=buttons.length; i<l; i++) {
     if (buttons[i].textContent == text) {
+      log("Se encuentra btn compra index " + i);
       return buttons[i];
     }
   }

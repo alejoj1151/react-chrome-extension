@@ -20,7 +20,7 @@ function sendTouchEvent(element, eventType) {
      */
     // @ts-ignore
     const touch = new Touch({
-        // Using a number like TS suggest breaks this... stupid.
+        // Using a number like TS suggest breaks this..
         // @ts-ignore
         identifier: 'filtrosprojectco',
         target: element,
