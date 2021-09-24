@@ -22,7 +22,7 @@ import { log } from './utils/logger';
 
             // Html etiqueta <a></a> de tipo linkText (href)
             const a1 = document.createElement('a');
-            const linkText = document.createTextNode('Interesado en noticias relacionadas con FUT? Ingresa aqui!');
+            const linkText = document.createTextNode('FIFA 21 - Noticias FUT Ingresa aqui!');
             a1.appendChild(linkText);
             a1.href = 'https://www.todoultimateteam.com/'; // Propertys CSS
             a1.target = '_blank';
@@ -38,7 +38,7 @@ import { log } from './utils/logger';
             const a2 = document.createElement('a');
             const linkText2 = document.createTextNode('Tienes alguna consulta? Contactame!');
             a2.appendChild(linkText2);
-            a2.href = 'https://twitter.com/alejo_pro11'; // Propertys CSS
+            a2.href = 'https://www.google.com'; // Propertys CSS
             a2.target = '_blank';
             a2.style.position = 'absolute';
             a2.style.top = '15px';
@@ -126,8 +126,6 @@ import { log } from './utils/logger';
                         log('La extensión está desactivada, así que se ignora el uso de teclas para acceso.');
                         return;
                     }
-
-                   
                 }
             });
         });
@@ -163,7 +161,7 @@ import { log } from './utils/logger';
 
                     // If extension "isn't active", don't handle any commands.
                     if (!isActive) {
-                        log('Extension is currently not active, so ignoring hotkey.');
+                        log('La extensión está desactivada, así que se ignora el uso de teclas para acceso.');
                         return;
                     }
                 }

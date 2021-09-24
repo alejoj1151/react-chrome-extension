@@ -8,7 +8,7 @@ export default function clickBuyNowButton() {
     if (buyNowButton) {
         clickElement(buyNowButton);
     } else {
-        logError(`No se ha encontrado el botoón "Comprar ahora".`);
+        logError(`No se ha encontrado el botón "Comprar ahora".`);
         throw 'No se encontró el botón "Comprar ahora".';
     }
 }

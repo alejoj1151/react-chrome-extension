@@ -106,7 +106,7 @@ export default class ShortfutsList extends React.Component<
         const map: Map<any, any> = new Map();
 
         map.set('altSpace', {
-            description: 'Activa o desactiva el aplicativo',
+            description: 'Activa o desactiva la APP',
             name: 'Alt+Space',
             shortcut: 'ALT+ESPACIO'
         });

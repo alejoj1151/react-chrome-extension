@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: {
+    entry: {  
         popup: path.join(__dirname, 'src/popup/index.tsx'),
         eventPage: path.join(__dirname, 'src/eventPage.ts'),
         contentScript: path.join(__dirname, 'src/contentScript.tsx')

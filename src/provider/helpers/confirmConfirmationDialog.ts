@@ -1,5 +1,5 @@
 import clickElement from './clickElement';
-import { logError } from '../../utils/logger';
+import { logError, log } from '../../utils/logger';
 
 /**
  * Confirmación de compra en el boton comprar ahora
@@ -7,7 +7,7 @@ import { logError } from '../../utils/logger';
 export default function confirmConfirmationDialog() {
     setTimeout(() => {
         try {
-            const dialogDocument = document.getElementsByClassName('ut-button-group')[0];
+            const dialogDocument = document.getElementsByClassName('ut-button-group')[1];
             //const okButton = findButtonbyTextContent("Aceptar");
             const okButton = findDialogButtonbyTextContent(dialogDocument, "Aceptar");
             clickElement(okButton);
@@ -31,7 +31,8 @@ export default function confirmConfirmationDialog() {
 function findDialogButtonbyTextContent(doc: Element, text: string) {
   var buttons = doc.querySelectorAll('button');
   for (var i=0, l=buttons.length; i<l; i++) {
-    if (buttons[i].textContent == text)
+    if (buttons[i].textContent == text) {
       return buttons[i];
-  }  
+    }
+  }
 }

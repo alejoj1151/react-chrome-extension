@@ -12,10 +12,7 @@ export default class Popup extends React.Component<{}, {}> {
 
     componentWillMount() {
         chrome.storage.sync.get('isNativeShortcuts', data => {
-            if (
-                data.isNativeShortcuts ||
-                data.isNativeShortcuts === undefined
-            ) {
+            if (data.isNativeShortcuts || data.isNativeShortcuts === undefined) {
                 this.isNativeShortcuts = true;
             } else {
                 this.isNativeShortcuts = false;
